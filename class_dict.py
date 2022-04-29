@@ -1,12 +1,12 @@
 from dataclasses import dataclass
-import typing
+from typing import Any
 import json
 
 @dataclass
 class Owner:
     name: str = 'Unknown name'
     age: int = 'Unknown age'
-    description: typing.Any = None
+    description: Any = None
     code_name: str = None
 
     def update_owner(self, list_of_attr: list):
